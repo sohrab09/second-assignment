@@ -1,12 +1,102 @@
+/* Body part  */
+
 .body{
     font-family: 'Bebas Neue', cursive;
 }
+
+/* Navbar Font  */
+
+.ul-font{
+    font-size: 25px;
+}
+
+/* Button Color  */
+
+.btn-color{
+    background-color:rgb(66, 138, 18);
+    color: white;
+    margin: 5px;
+}
+
+/* Header star h1 tag  */
 
 .custom-color{
     color: green;
 }
 
+/* h4-design */
+
+.h4-design{
+    font-weight: bolder;
+    font-size: 30px;
+    color: rgb(138, 212, 18);
+}
+
+/* Header star h1 span tag  */
+
 .custom-font{
     font-size: 70px;
     font-family: 'Bebas Neue', cursive;
+}
+
+
+/* Features Section */
+
+.features {	padding: 60px 0;
+} 
+.features-card {	
+    border-radius: 20px;	
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .05);	
+    padding: 20px 30px;	width: 90%;
+} 
+
+.features-icon--box {	
+    padding-right: 30px;
+} 
+
+.features-icon {	
+    width: 75px;	
+    height: 75px;	
+    object-fit: contain;
+} 
+
+.features-title {	
+    color: #363958;	
+    font-size: 24px;	
+    font-weight: 700;
+} 
+
+.features-description {	
+    color: #3E3E3E;	margin-bottom: 0;
+}
+
+
+@media screen and (max-width: 576px) {
+	.features {
+		padding: 50px 0 80px;
+	}
+	.features-card {
+		padding: 20px;
+	}
+	.features-icon--box {
+		padding-right: 0;
+		width: 100%;
+		margin-bottom: 15px;
+	}
+}
+
+
+/* Footer section  */
+.footer-option{
+    color: rgb(216, 77, 216);
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.bg-color{
+    background-color: lightcyan;
+}
+
+.section-bg{
+    background-color: lightcyan;
 }

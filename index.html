@@ -13,8 +13,10 @@
 
 <body>
     <header class="container">
+
         <!-- Navbar Start -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ul-font">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" alt="">
@@ -35,15 +37,17 @@
                             <a class="nav-link" href="#">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#subscribe">Contact Us</a>
+                            <a class="nav-link" href="#">Contact Us</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
         <!-- Navbar End -->
 
         <!-- Header Start  -->
+
         <section class="bg-light mb-5">
             <div class="row d-flex align-items-center p-5">
                 <div class="col-md-6">
@@ -51,8 +55,8 @@
                     <h1 class="custom-font"><span class="custom-color">MOON</span> </h1>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, <br> accusantium. Lorem
                         ipsum dolor sit amet.</p>
-                    <button class="btn btn-dark"><img style="height: 30px; width: 30px;"
-                            src="images/shopping-cart 1.png" alt="">Buy Now</button>
+                    <button class="btn btn-dark btn-color">
+                        <img style="height: 30px; width: 30px;" src="images/shopping-cart 1.png" alt="">BUY NOW</button>
                 </div>
                 <div class="col-md-6">
                     <img src="images/cover.png" class="d-block w-100" alt="...">
@@ -66,47 +70,59 @@
 
     <main class="container mt-5">
 
-        <!-- Middle Part Start  -->
+        <!-- Features Start  -->
 
-        <section class="container">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-6">
-                    <div class="d-flex align-items-center col-sm-12 shadow p-3">
-                        <img style="height: 90px; width: 90px;" src="images/image 12.png" alt="">
-                        <div class="p-2 mb-2">
-                            <h4>Lorem ipsum dolor sit amet.</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, laborum!</p>
+        <section class="features">
+            <div class="container">
+                <div class="row features-inner d-flex align-items-center mx-auto">
+                    <div class="order-2 order-lg-1 col-lg-6">
+                        <div class="features-content">
+                            <div
+                                class="features-card d-flex align-items-center mb-4 flex-wrap flex-sm-nowrap text-center text-sm-start">
+                                <div class="features-icon--box">
+                                    <img src="images/image 12.png" alt="" class="features-icon">
+                                </div>
+                                <div class="features-textbox">
+                                    <h2 class="features-title mb-3">Lorem ipsum dolor sit amet.</h2>
+                                    <p class="features-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, adipisci?</p>
+                                </div>
+                            </div>
+                            <div
+                                class="features-card d-flex align-items-center mb-4 flex-wrap flex-sm-nowrap text-center text-sm-start">
+                                <div class="features-icon--box">
+                                    <img src="images/image 13.png" alt="" class="features-icon">
+                                </div>
+                                <div class="features-textbox">
+                                    <h2 class="features-title mb-3">Lorem ipsum dolor sit amet.</h2>
+                                    <p class="features-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, maiores?</p>
+                                </div>
+                            </div>
+                            <div
+                                class="features-card d-flex align-items-center flex-wrap flex-sm-nowrap text-center text-sm-start">
+                                <div class="features-icon--box">
+                                    <img src="images/image 14.png" alt="" class="features-icon">
+                                </div>
+                                <div class="features-textbox">
+                                    <h2 class="features-title mb-3">Lorem ipsum dolor sit amet.</h2>
+                                    <p class="features-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, molestias.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="d-flex align-items-center col-sm-12 shadow p-3">
-                        <img style="height: 90px; width: 90px;" src="images/image 13.png" alt="">
-                        <div class="p-2 mb-2">
-                            <h4>Lorem ipsum dolor sit amet.</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, laborum!</p>
+                    <div class="order-1 order-lg-2 col-lg-6 mb-5 mb-lg-0">
+                        <div class="features-img--box">
+                            <img src="images/features.png" alt="" class="features-img w-100">
                         </div>
-                    </div>
-                    <div class="d-flex align-items-center col-sm-12 shadow p-3">
-                        <img style="height: 90px; width: 90px;" src="images/image 14.png" alt="">
-                        <div class="p-2 mb-2">
-                            <h4>Lorem ipsum dolor sit amet.</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, laborum!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div>
-                        <img src="images/middle.png" class="d-block w-100 align-items-center" alt="">
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- Middle Part End  -->
+        <!-- Features Section End -->
 
         <!-- Casual Backpack Start -->
 
         <section class="mt-5">
-            <h3 class="p-3 bg-info d-flex align-items-center justify-content-around">Casual Backpack</h3>
+            <h3 class="p-3 section-bg d-flex align-items-center justify-content-around">Casual Backpack</h3>
             <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 rounded-3">
                 <div class="col">
                     <div class="card h-100 shadow">
@@ -120,13 +136,14 @@
                             <div class="row gy-5">
                                 <div class="col-6">
                                     <div class="p-3 bg-light">
-                                        <h4>$300</h4>
+                                        <h4 class="h4-design">$300</h4>
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="p-3 bg-light">
-                                        <button class="btn btn-secondary"><img style="height: 20px; width: 20px;"
-                                                src="images/shopping-cart 1.png" alt=""> Buy Now</button>
+                                        <button class="btn btn-secondary">
+                                            <img style="height: 20px; width: 20px;" src="images/shopping-cart 1.png"
+                                                alt="">Buy Now</button>
                                     </div>
                                 </div>
                             </div>
@@ -145,13 +162,14 @@
                             <div class="row gy-5">
                                 <div class="col-6">
                                     <div class="p-3 bg-light">
-                                        <h4>$300</h4>
+                                        <h4 class="h4-design">$300</h4>
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="p-3 bg-light">
-                                        <button class="btn btn-secondary"><img style="height: 20px; width: 20px;"
-                                                src="images/shopping-cart 1.png" alt=""> Buy Now</button>
+                                        <button class="btn btn-secondary">
+                                            <img style="height: 20px; width: 20px;" src="images/shopping-cart 1.png"
+                                                alt="">Buy Now</button>
                                     </div>
                                 </div>
                             </div>
@@ -170,13 +188,14 @@
                             <div class="row gy-5">
                                 <div class="col-6">
                                     <div class="p-3 bg-light">
-                                        <h4>$300</h4>
+                                        <h4 class="h4-design">$300</h4>
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="p-3 bg-light">
-                                        <button class="btn btn-secondary"><img style="height: 20px; width: 20px;"
-                                                src="images/shopping-cart 1.png" alt=""> Buy Now</button>
+                                        <button class="btn btn-secondary">
+                                            <img style="height: 20px; width: 20px;" src="images/shopping-cart 1.png"
+                                                alt="">Buy Now</button>
                                     </div>
                                 </div>
                             </div>
@@ -191,27 +210,27 @@
         <!-- Traverl Backpack Start  -->
 
         <section class="mt-5">
-            <h3 class="p-3 rounded bg-info d-flex align-items-center justify-content-around">Travel Backpack</h3>
+            <h3 class="p-3 rounded section-bg d-flex align-items-center justify-content-around">Travel Backpack</h3>
             <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
                 <div class="col">
                     <div class="card h-100 shadow">
-                        <img src="images/traverl/travel1.png" class="card-img-top" alt="...">
+                        <img src="images/travel/travel1.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Wildcraft</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quod
-                                optio qui.</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quod optio qui.</p>
                         </div>
                         <div class="card-footer overflow-hidden">
                             <div class="row gy-5">
                                 <div class="col-6">
                                     <div class="p-3 bg-light">
-                                        <h4>$300</h4>
+                                        <h4 class="h4-design">$300</h4>
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="p-3 bg-light">
-                                        <button class="btn btn-secondary"><img style="height: 20px; width: 20px;"
-                                                src="images/shopping-cart 1.png" alt=""> Buy Now</button>
+                                        <button class="btn btn-secondary">
+                                            <img style="height: 20px; width: 20px;" src="images/shopping-cart 1.png"
+                                                alt="">Buy Now</button>
                                     </div>
                                 </div>
                             </div>
@@ -220,7 +239,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100 shadow">
-                        <img src="images/traverl/travel2.png" class="card-img-top" alt="...">
+                        <img src="images/travel/travel2.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Impluse</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
@@ -230,13 +249,14 @@
                             <div class="row gy-5">
                                 <div class="col-6">
                                     <div class="p-3 bg-light">
-                                        <h4>$300</h4>
+                                        <h4 class="h4-design">$300</h4>
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="p-3 bg-light">
-                                        <button class="btn btn-secondary"><img style="height: 20px; width: 20px;"
-                                                src="images/shopping-cart 1.png" alt=""> Buy Now</button>
+                                        <button class="btn btn-secondary">
+                                            <img style="height: 20px; width: 20px;"
+                                                src="images/shopping-cart 1.png" alt="">Buy Now</button>
                                     </div>
                                 </div>
                             </div>
@@ -245,7 +265,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100 shadow">
-                        <img src="images/traverl/travel3.png" class="card-img-top" alt="...">
+                        <img src="images/travel/travel3.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Attache</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat ipsam
@@ -255,13 +275,14 @@
                             <div class="row gy-5">
                                 <div class="col-6">
                                     <div class="p-3 bg-light">
-                                        <h4>$300</h4>
+                                        <h4 class="h4-design">$300</h4>
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="p-3 bg-light">
-                                        <button class="btn btn-secondary"><img style="height: 20px; width: 20px;"
-                                                src="images/shopping-cart 1.png" alt=""> Buy Now</button>
+                                        <button class="btn btn-secondary">
+                                            <img style="height: 20px; width: 20px;"
+                                                src="images/shopping-cart 1.png" alt="">Buy Now</button>
                                     </div>
                                 </div>
                             </div>
@@ -276,27 +297,27 @@
         <!-- Laptop Backpack Start -->
 
         <section class="mt-5">
-            <h3 class="p-3 rounded bg-info d-flex align-items-center justify-content-around">Laptop Backpack</h3>
+            <h3 class="p-3 rounded section-bg d-flex align-items-center justify-content-around">Laptop Backpack</h3>
             <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
                 <div class="col">
                     <div class="card h-100 shadow">
                         <img src="images/laptop/laptop1.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Laptop Bag 1</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quod
-                                optio qui.</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quod optio qui.</p>
                         </div>
                         <div class="card-footer overflow-hidden">
                             <div class="row gy-5">
                                 <div class="col-6">
                                     <div class="p-3 bg-light">
-                                        <h4>$300</h4>
+                                        <h4 class="h4-design">$300</h4>
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="p-3 bg-light">
-                                        <button class="btn btn-secondary"><img style="height: 20px; width: 20px;"
-                                                src="images/shopping-cart 1.png" alt=""> Buy Now</button>
+                                        <button class="btn btn-secondary">
+                                            <img style="height: 20px; width: 20px;"
+                                                src="images/shopping-cart 1.png" alt="">Buy Now</button>
                                     </div>
                                 </div>
                             </div>
@@ -315,13 +336,14 @@
                             <div class="row gy-5">
                                 <div class="col-6">
                                     <div class="p-3 bg-light">
-                                        <h4>$300</h4>
+                                        <h4 class="h4-design">$300</h4>
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="p-3 bg-light">
-                                        <button class="btn btn-secondary"><img style="height: 20px; width: 20px;"
-                                                src="images/shopping-cart 1.png" alt=""> Buy Now</button>
+                                        <button class="btn btn-secondary">
+                                            <img style="height: 20px; width: 20px;"
+                                                src="images/shopping-cart 1.png" alt="">Buy Now</button>
                                     </div>
                                 </div>
                             </div>
@@ -340,7 +362,7 @@
                             <div class="row gy-5">
                                 <div class="col-6">
                                     <div class="p-3 bg-light">
-                                        <h4>$300</h4>
+                                        <h4 class="h4-design">$300</h4>
                                     </div>
                                 </div>
                                 <div class="col-6">
@@ -358,10 +380,10 @@
 
         <!-- Laptop Backpack End -->
 
-        <!-- Membership Start -->
+        <!-- Membership form Start -->
 
         <section class="container mt-5">
-            <h3 class="p-3 rounded bg-warning d-flex align-items-center justify-content-around">Membership Form</h3>
+            <h3 class="p-3 section-bg rounded d-flex align-items-center justify-content-around">Membership Form</h3>
             <form class="bg-light text-center">
                 <div class="form-group mt-3">
                     <label for="exampleInputName">First Name</label>
@@ -388,14 +410,14 @@
             </form>
         </section>
 
-        <!-- Membership End -->
+        <!-- Membership Form End -->
 
     </main>
 
     <!-- Footer Start -->
 
-    <footer class="mt-5 text-center bg-info">
-        <small>© Himel 2021. all rights reserved.</small>
+    <footer class="mt-5 text-center bg-color">
+        <small>© <span class="footer-option">SOHRAB</span> 2021. all rights reserved.</small>
     </footer>
 
     <!-- Footer End -->
